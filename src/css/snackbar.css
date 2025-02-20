@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+.form {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.submit-btn {
+  display: flex;
+  width: 360px;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  border: none;
+  border-radius: 8px;
+  background: #4e75ff;
+
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+}
+
+.submit-btn:hover {
+  background: #6c8cff;
+}
+
+.delay {
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-delay {
+  display: flex;
+  width: 360px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid #808080;
+
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+
+  padding-left: 16px;
+  margin: 0;
+}
+
+.input-delay:hover {
+  border-radius: 4px;
+  border: 1px solid #000;
+}
+.input-delay:focus {
+  border-radius: 4px;
+  border: 1px solid #4e75ff;
+}
+
+.set {
+  width: 360px;
+  height: 64px;
+  flex-shrink: 0;
+
+  stroke-width: 1px;
+  stroke: #808080;
+
+  border-radius: 4px;
+
+  display: flex;
+  gap: 48px;
+  justify-content: center;
+  align-self: baseline;
+  margin: 0;
+  padding: 0;
+  /* padding: 8px; */
+}
+
+legend {
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+
+  margin-left: 28px;
+}
+
+.set:hover {
+  stroke: #000;
+}
+
+.radio {
+  appearance: none;
+  /* -webkit-appearance: none; */
+  /* -moz-appearance: none; */
+  width: 16px; /* Set the width and height */
+  height: 16px;
+  border-radius: 50%; /* Create a circular shape */
+  border: 2px solid #111; /* Set the border color */
+  margin-right: 5px; /* Add some spacing between the radio button and label */
+  outline: none; /* Remove the default focus outline */
+}
+.radio:checked {
+  border: 2px solid #4e75ff;
+  background-color: #4e75ff;
+}
+
+.set label {
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
