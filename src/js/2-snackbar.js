@@ -26,19 +26,19 @@ const handleSubmit = event => {
   const promise = new Promise((resolve, reject) => {
     setTimeout(() => {
       if (state === 'fulfilled') {
-        resolve(delay);
+        resolve(`✅ Fulfilled promise in ${delay}ms`);
       } else {
-        reject(delay);
+        reject(`❌ Rejected promise in ${delay}ms`);
       }
     }, delay);
   });
 
   promise
     .then(delay => {
-      showMessage('Fulfilled', `✅ Fulfilled promise in ${delay}ms`);
+      showMessage('Fulfilled', delay);
     })
     .catch(delay => {
-      showMessage('Rejected', `❌ Rejected promise in ${delay}ms`);
+      showMessage('Rejected', delay);
     });
 };
 
