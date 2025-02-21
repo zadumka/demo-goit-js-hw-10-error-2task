@@ -15,7 +15,7 @@ const refs = {
 let timerId = null;
 let userDate = null;
 
-refs.btnStart.disabled = true;
+
 
 const options = {
   enableTime: true,
