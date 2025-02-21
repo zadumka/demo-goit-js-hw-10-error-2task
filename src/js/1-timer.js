@@ -15,7 +15,7 @@ const refs = {
 let timerId = null;
 let userDate = null;
 
-
+refs.btnStart.disabled = true;
 
 const options = {
   enableTime: true,
@@ -23,7 +23,7 @@ const options = {
   defaultDate: new Date(),
   minuteIncrement: 1,
   onClose(selectedDates) {
-    if (!selectedDates[0] || selectedDates[0] <= options.defaultDate) {
+    if (!selectedDates[0] || selectedDates[0] <= new Date()) {
       iziToast.show({
         title: 'Error',
         message: 'Please choose a date in the future!',
